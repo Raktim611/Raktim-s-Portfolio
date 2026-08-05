@@ -1,0 +1,12 @@
+.footer{
+    height:60px;
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(198,198,198,0.4);
+    border-radius:8px;
+}
+.footer span{
+    background-color: red;
+}
