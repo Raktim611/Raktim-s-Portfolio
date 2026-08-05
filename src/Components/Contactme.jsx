@@ -18,12 +18,14 @@ export default function Contactme(){
         publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       })
       .then(
-        () => {
-          alert("Message sent successfully :) ")
+        (result) => {
+          alert("Message sent successfully :) ");
+          console.log(result)
           form.current.reset()
         },
         (error) => {
           alert("Error Occured while sending message :( ");
+          console.log(error);
         },
       );
   };
