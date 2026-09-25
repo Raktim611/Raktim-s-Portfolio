@@ -47,189 +47,447 @@ function App() {
 
 
   return (
-    <main>
-      <Canvas style={{
-        height:"100vh",
-        width:"100vw",
-        top:0,
-        left:0,
-        position:"fixed",
-        zIndex:5,
-        background:"transparent"
+    // <main>
+    //   <Canvas style={{
+    //     height:"100vh",
+    //     width:"100vw",
+    //     top:0,
+    //     left:0,
+    //     position:"fixed",
+    //     zIndex:5,
+    //     background:"transparent"
         
-      }}>
-        <Model>
+    //   }}>
+    //     <Model>
           
-        </Model>
-      </Canvas>
-      <section className="section1">
+    //     </Model>
+    //   </Canvas>
+    //   <section className="section1">
 
-        <div className="littleinfo">
-          <div className="heading">
-            <h1 id="info" ref={textRef}></h1>
-          </div>
+    //     <div className="littleinfo">
+    //       <div className="heading">
+    //         <h1 id="info" ref={textRef}></h1>
+    //       </div>
 
-          <div className="digital">
-            <a href="https://leetcode.com/u/FWul2oC4nD/" target='_blank'><img id="leetcode" src="/leetcode.webp"></img></a>
-            <a href="https://github.com/Raktim611" target='_blank'><img id="github" src="/Github.png"></img></a>
-          </div>
+    //       <div className="digital">
+    //         <a href="https://leetcode.com/u/FWul2oC4nD/" target='_blank'><img id="leetcode" src="/leetcode.webp"></img></a>
+    //         <a href="https://github.com/Raktim611" target='_blank'><img id="github" src="/Github.png"></img></a>
+    //       </div>
          
          
           
-        </div>
+    //     </div>
 
-        <img id="me" src="/me.jpeg" alt="photo_identification"></img>
+    //     <img id="me" src="/me.jpeg" alt="photo_identification"></img>
       
-      </section>
+    //   </section>
 
-      <section className="section2">
-        {/* <h1>About Me</h1> */}
+    //   <section className="section2">
+    //     {/* <h1>About Me</h1> */}
 
-        <div className="leftside">
-            <h1>Hey I'm Raktim Nandi</h1>
-            <br></br>
-            <br></br>
-            <h2><i>I'm a 20 year old</i> <br></br><i>Engineering Undergraduate</i></h2>
-            <br></br>
-            <br></br>
-            <h2><i>Currently I'm pursuing my</i><br></br><i>undergraduation from</i> <br></br> <i>NSHM Institute of Engineering and Technology</i></h2>
-            <br></br>
-            <br></br>
-            <h2><i>Currently I'm in my 3rd year </i><br></br> <i>of my Engineering</i></h2>
-        </div>
-
-
-        <div className="middleside">
-          <h2>I have interest in Full Stack Development especially <br></br> Backend Development</h2>
-          <br></br>
-          <br></br>
-          <h2>Aspiring AI Engineer </h2>
-          <br></br>
-          <br></br>
-          <h2>Learning DSA</h2>
+    //     <div className="leftside">
+    //         <h1>Hey I'm Raktim Nandi</h1>
+    //         <br></br>
+    //         <br></br>
+    //         <h2><i>I'm a 20 year old</i> <br></br><i>Engineering Undergraduate</i></h2>
+    //         <br></br>
+    //         <br></br>
+    //         <h2><i>Currently I'm pursuing my</i><br></br><i>undergraduation from</i> <br></br> <i>NSHM Institute of Engineering and Technology</i></h2>
+    //         <br></br>
+    //         <br></br>
+    //         <h2><i>Currently I'm in my 3rd year </i><br></br> <i>of my Engineering</i></h2>
+    //     </div>
 
 
-        </div>
+    //     <div className="middleside">
+    //       <h2>I have interest in Full Stack Development especially <br></br> Backend Development</h2>
+    //       <br></br>
+    //       <br></br>
+    //       <h2>Aspiring AI Engineer </h2>
+    //       <br></br>
+    //       <br></br>
+    //       <h2>Learning DSA</h2>
 
 
-        <div className="rightside">
-          <div className="first">
-            <i class="fa-solid fa-laptop"></i>
-            <p>Web Application Development</p>
-          </div>
+    //     </div>
+
+
+    //     <div className="rightside">
+    //       <div className="first">
+    //         <i class="fa-solid fa-laptop"></i>
+    //         <p>Web Application Development</p>
+    //       </div>
             
-          <div className="second">
-           <i class="fa-solid fa-robot"></i>
-           <p>AI Enthusiast</p>
-          </div>
+    //       <div className="second">
+    //        <i class="fa-solid fa-robot"></i>
+    //        <p>AI Enthusiast</p>
+    //       </div>
 
-          <div className="third">
-            <i class="fa-solid fa-circle-exclamation"></i>
-            <p>Problem Solver</p>
-          </div>
+    //       <div className="third">
+    //         <i class="fa-solid fa-circle-exclamation"></i>
+    //         <p>Problem Solver</p>
+    //       </div>
 
 
-        </div>
-      </section>
+    //     </div>
+    //   </section>
 
-      <section className="section3">
-        <h1>My Skills</h1>
-        <div className="maindiv">
-          <div className="html">
-            <img src="/html.png" alt="html_logo"></img>
-            <p>HTML</p>
-          </div>
+    //   <section className="section3">
+    //     <h1>My Skills</h1>
+    //     <div className="maindiv">
+    //       <div className="html">
+    //         <img src="/html.png" alt="html_logo"></img>
+    //         <p>HTML</p>
+    //       </div>
 
-          <div className="css">
-            <img src="/css.webp" alt="css_logo"></img>
-            <p>CSS</p>
-          </div>
+    //       <div className="css">
+    //         <img src="/css.webp" alt="css_logo"></img>
+    //         <p>CSS</p>
+    //       </div>
 
-          <div className="js">
-            <img src="/js.png" alt="js_logo"></img>
-            <p>Java Script</p>
-          </div>
+    //       <div className="js">
+    //         <img src="/js.png" alt="js_logo"></img>
+    //         <p>Java Script</p>
+    //       </div>
 
-          <div className="threejs">
-            <img src="/threejs.png" alt="threejs_logo"></img>
-            <p>Three.JS</p>
-          </div>
+    //       <div className="threejs">
+    //         <img src="/threejs.png" alt="threejs_logo"></img>
+    //         <p>Three.JS</p>
+    //       </div>
           
-          <div className="mongo">
-            <img src="/mongodb.png" alt="mongodb_logo"></img>
-            <p>MongoDB</p>
-          </div>
+    //       <div className="mongo">
+    //         <img src="/mongodb.png" alt="mongodb_logo"></img>
+    //         <p>MongoDB</p>
+    //       </div>
 
-          <div className="express">
-            <img src="/express.png" alt="express_logo"></img>
-            <p>Express.JS</p>
-          </div>
+    //       <div className="express">
+    //         <img src="/express.png" alt="express_logo"></img>
+    //         <p>Express.JS</p>
+    //       </div>
 
-          <div className="react">
-            <img src="/react.webp" alt="react_logo"></img>
-            <p>React.JS</p>
-          </div>
+    //       <div className="react">
+    //         <img src="/react.webp" alt="react_logo"></img>
+    //         <p>React.JS</p>
+    //       </div>
 
-          <div className="node">
-            <img src="/Node.png" alt="Node_logo"></img>
-            <p>Node.JS</p>
-          </div>
+    //       <div className="node">
+    //         <img src="/Node.png" alt="Node_logo"></img>
+    //         <p>Node.JS</p>
+    //       </div>
 
-          <div className="cpp">
-            <img src="/c++.webp" alt="c++_logo"></img>
-            <p>C++</p>
-          </div>
+    //       <div className="cpp">
+    //         <img src="/c++.webp" alt="c++_logo"></img>
+    //         <p>C++</p>
+    //       </div>
 
-          <div className="python">
-            <img src="/python.webp" alt="python_logo"></img>
-            <p>Python</p>
-          </div>
-        </div>
-      </section>
-      <section className="section4">
-        <h1>My Projects</h1>
-        <div className="projects">
-          {/* <div className="firstproject">
-            <h1>Wanderlust</h1>
+    //       <div className="python">
+    //         <img src="/python.webp" alt="python_logo"></img>
+    //         <p>Python</p>
+    //       </div>
+    //     </div>
+    //   </section>
+    //   <section className="section4">
+    //     <h1>My Projects</h1>
+    //     <div className="projects">
+    //       {/* <div className="firstproject">
+    //         <h1>Wanderlust</h1>
 
-          </div> */}
+    //       </div> */}
 
-          <div className="secondproject">
-            <img src="/campuslink.jpeg" alt="logo"></img>
-            <h2>CampusLink is a true <br></br>social media app where you can post you achievements ,connect to other people,comment on someones post</h2>
-            <button>
-              <a href="https://campus-link-jade.vercel.app/" target='_blank'>Quick Demo</a>
-              <i class="fa-solid fa-circle-play"></i>
-            </button>
-          </div>
+    //       <div className="secondproject">
+    //         <img src="/campuslink.jpeg" alt="logo"></img>
+    //         <h2>CampusLink is a true <br></br>social media app where you can post you achievements ,connect to other people,comment on someones post</h2>
+    //         <button>
+    //           <a href="https://campus-link-jade.vercel.app/" target='_blank'>Quick Demo</a>
+    //           <i class="fa-solid fa-circle-play"></i>
+    //         </button>
+    //       </div>
 
-          <div className="thirdproject">
-            <img src="/dogstudio.jpeg" alt="dogstudio_logo"></img>
-            <h2>Dogstudio is a 3D website <br></br>Made it just to practice to practice 3d Web Development.</h2>
-            <button>
-              <a href="https://dogstudio-seven.vercel.app/"  target='_blank'>Quick Demo</a>
-              <i class="fa-solid fa-circle-play"></i>
-            </button>
-          </div>
+    //       <div className="thirdproject">
+    //         <img src="/dogstudio.jpeg" alt="dogstudio_logo"></img>
+    //         <h2>Dogstudio is a 3D website <br></br>Made it just to practice to practice 3d Web Development.</h2>
+    //         <button>
+    //           <a href="https://dogstudio-seven.vercel.app/"  target='_blank'>Quick Demo</a>
+    //           <i class="fa-solid fa-circle-play"></i>
+    //         </button>
+    //       </div>
 
-          <div className="fourthproject">
-            <img src="/JustPlay.jpeg" alt="justplay_logo"></img>
-            <h2>JustPlay is a free music<br></br> streaming platform build for music lovers.<br></br>This will be live in few weeks</h2>
-          </div>
+    //       <div className="fourthproject">
+    //         <img src="/JustPlay.jpeg" alt="justplay_logo"></img>
+    //         <h2>JustPlay is a free music<br></br> streaming platform build for music lovers.<br></br>This will be live in few weeks</h2>
+    //       </div>
           
-        </div>
+    //     </div>
 
-      </section>
+    //   </section>
 
 
-      <section className="section5">
-        <h1>Contact Me</h1>
-        <Contactme/>
-        <Footer/>
-      </section>
+    //   <section className="section5">
+    //     <h1>Contact Me</h1>
+    //     <Contactme/>
+    //     <Footer/>
+    //   </section>
 
       
-    </main>
+    // </main>
+    <main className="portfolio">
+
+    <div className="global-model">
+        <Canvas>
+            <Model />
+        </Canvas>
+    </div>
+
+    <div className="portfolio-content">
+
+        <section className="section1">
+            <div className="littleinfo">
+                <div className="heading">
+                    <h1 id="info" ref={textRef}></h1>
+                </div>
+
+                <div className="digital">
+                    <a
+                        href="https://leetcode.com/u/FWul2oC4nD/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <img id="leetcode" src="/leetcode.webp" alt="leetcode" />
+                    </a>
+
+                    <a
+                        href="https://github.com/Raktim611"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <img id="github" src="/Github.png" alt="github" />
+                    </a>
+                </div>
+            </div>
+
+            <img
+                id="me"
+                src="/me.jpeg"
+                alt="photo_identification"
+            />
+        </section>
+
+        <section className="section2">
+
+            <div className="leftside">
+                <h1>Hey I'm Raktim Nandi</h1>
+
+                <h2>
+                    <i>I'm a 20 year old</i>
+                    <br />
+                    <i>Engineering Undergraduate</i>
+                </h2>
+
+                <h2>
+                    <i>Currently I'm pursuing my</i>
+                    <br />
+                    <i>undergraduation from</i>
+                    <br />
+                    <i>NSHM Institute of Engineering and Technology</i>
+                </h2>
+
+                <h2>
+                    <i>Currently I'm in my 3rd year</i>
+                    <br />
+                    <i>of my Engineering</i>
+                </h2>
+            </div>
+
+            <div className="middleside">
+                <h2>
+                    I have interest in Full Stack Development
+                    especially Backend Development
+                </h2>
+
+                <h2>Aspiring AI Engineer</h2>
+
+                <h2>Learning DSA</h2>
+            </div>
+
+            <div className="rightside">
+
+                <div className="first">
+                    <i className="fa-solid fa-laptop"></i>
+                    <p>Web Application Development</p>
+                </div>
+
+                <div className="second">
+                    <i className="fa-solid fa-robot"></i>
+                    <p>AI Enthusiast</p>
+                </div>
+
+                <div className="third">
+                    <i className="fa-solid fa-circle-exclamation"></i>
+                    <p>Problem Solver</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section className="section3">
+
+            <h1>My Skills</h1>
+
+            <div className="maindiv">
+
+                <div className="html">
+                    <img src="/html.png" alt="html_logo" />
+                    <p>HTML</p>
+                </div>
+
+                <div className="css">
+                    <img src="/css.webp" alt="css_logo" />
+                    <p>CSS</p>
+                </div>
+
+                <div className="js">
+                    <img src="/js.png" alt="js_logo" />
+                    <p>Java Script</p>
+                </div>
+
+                <div className="threejs">
+                    <img src="/threejs.png" alt="threejs_logo" />
+                    <p>Three.JS</p>
+                </div>
+
+                <div className="mongo">
+                    <img src="/mongodb.png" alt="mongodb_logo" />
+                    <p>MongoDB</p>
+                </div>
+
+                <div className="express">
+                    <img src="/express.png" alt="express_logo" />
+                    <p>Express.JS</p>
+                </div>
+
+                <div className="react">
+                    <img src="/react.webp" alt="react_logo" />
+                    <p>React.JS</p>
+                </div>
+
+                <div className="node">
+                    <img src="/Node.png" alt="Node_logo" />
+                    <p>Node.JS</p>
+                </div>
+
+                <div className="cpp">
+                    <img src="/c++.webp" alt="c++_logo" />
+                    <p>C++</p>
+                </div>
+
+                <div className="python">
+                    <img src="/python.webp" alt="python_logo" />
+                    <p>Python</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section className="section4">
+
+            <h1>My Projects</h1>
+
+            <div className="projects">
+
+                <div className="secondproject">
+
+                    <img
+                        src="/campuslink.jpeg"
+                        alt="campuslink_logo"
+                    />
+
+                    <h2>
+                        CampusLink is a true
+                        <br />
+                        social media app where you can post your
+                        achievements, connect to other people,
+                        comment on someone's post
+                    </h2>
+
+                    <button>
+                        <a
+                            href="https://campus-link-jade.vercel.app/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Quick Demo
+                        </a>
+
+                        <i className="fa-solid fa-circle-play"></i>
+                    </button>
+
+                </div>
+
+                <div className="thirdproject">
+
+                    <img
+                        src="/dogstudio.jpeg"
+                        alt="dogstudio_logo"
+                    />
+
+                    <h2>
+                        Dogstudio is a 3D website
+                        <br />
+                        Made it just to practice
+                        3D Web Development.
+                    </h2>
+
+                    <button>
+                        <a
+                            href="https://dogstudio-seven.vercel.app/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Quick Demo
+                        </a>
+
+                        <i className="fa-solid fa-circle-play"></i>
+                    </button>
+
+                </div>
+
+                <div className="fourthproject">
+
+                    <img
+                        src="/JustPlay.jpeg"
+                        alt="justplay_logo"
+                    />
+
+                    <h2>
+                        JustPlay is a free music
+                        <br />
+                        streaming platform built for music lovers.
+                        <br />
+                        This will be live in few weeks
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section className="section5">
+
+            <h1>Contact Me</h1>
+
+            <Contactme />
+
+            <Footer />
+
+        </section>
+
+    </div>
+
+</main>
+
   )
 }
 
