@@ -1,59 +1,152 @@
-.contactform{
-    height:70%;
-    width:80%;
+.contactform {
+    width: min(900px, 90%);
+    min-height: 550px;
+    padding: 2.5rem;
     display: flex;
     flex-direction: column;
-     background: rgba(198,198,198,0.2);
-    gap: 2rem;
-    border-radius: 1rem;
+    gap: 1.5rem;
+    background: rgba(198, 198, 198, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 1.5rem;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow:
+        0 0 30px rgba(99, 102, 241, 0.12),
+        inset 0 0 20px rgba(255, 255, 255, 0.03);
+    position: relative;
+    overflow: hidden;
 }
 
-.contactform input{
-    height:10%;
-    width: 70%;
-    margin-left: 3rem;
-    margin-top: 2rem;
-    padding-left: 1rem;
-    border-radius: 1rem;
+.contactform input {
+    width: 100%;
+    height: 55px;
+    margin: 0;
+    padding: 0 1.2rem;
+    border-radius: 12px;
     color: white;
-    background: rgba(198,198,198,0.4);
-    border: 2px solid silver;
+    background: rgba(198, 198, 198, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    outline: none;
+    font-family: inherit;
+    font-size: 16px;
+    transition: 0.3s ease;
 }
-.contactform input::placeholder{
-    color: white;
+
+.contactform input::placeholder {
+    color: rgba(255, 255, 255, 0.75);
     opacity: 1;
 }
-.contactform textarea{
-    height:20%;
-    width: 70%;
-    margin-left: 3rem;
-    border-radius: 1rem;
-    padding: 1rem;
-    background: rgba(198,198,198,0.4);
-    color: white;
-    border: 2px solid silver;
+
+.contactform input:focus {
+    border-color: #6366f1;
+    background: rgba(99, 102, 241, 0.1);
+    box-shadow:
+        0 0 10px rgba(99, 102, 241, 0.35),
+        0 0 25px rgba(99, 102, 241, 0.12);
 }
-.contactform textarea::placeholder{
+
+.contactform textarea {
+    width: 100%;
+    min-height: 180px;
+    margin: 0;
+    padding: 1.2rem;
+    border-radius: 12px;
+    background: rgba(198, 198, 198, 0.12);
     color: white;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    outline: none;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.contactform textarea::placeholder {
+    color: rgba(255, 255, 255, 0.75);
     opacity: 1;
 }
-.contactform button{
-    height: 10%;
-    width: 10%;
-    border-radius: 1rem;
-    margin-left: 60rem;
-    font-size: 20px;
+
+.contactform textarea:focus {
+    border-color: #6366f1;
+    background: rgba(99, 102, 241, 0.1);
+    box-shadow:
+        0 0 10px rgba(99, 102, 241, 0.35),
+        0 0 25px rgba(99, 102, 241, 0.12);
+}
+
+.contactform button {
+    width: 140px;
+    height: 48px;
+    margin: 0 0 0 auto;
+    border-radius: 12px;
     border: none;
-    background-color: #6366F1  ;
-    color: #FFFFFF ;
-    transition: all .4s linear;
-}
-
-.contactform button:hover{
-    background-color: #4F46E5 ;
-    color: #FFFFFF;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
+.contactform button:hover {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    transform: translateY(-3px);
+    box-shadow:
+        0 8px 25px rgba(99, 102, 241, 0.35),
+        0 0 20px rgba(139, 92, 246, 0.25);
+}
 
+.contactform button:active {
+    transform: translateY(0);
+}
 
+@media (max-width: 900px) {
+    .contactform {
+        width: 90%;
+        min-height: 500px;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .contactform {
+        width: 100%;
+        min-height: auto;
+        padding: 1.5rem;
+        gap: 1.2rem;
+        border-radius: 1.2rem;
+    }
+
+    .contactform input {
+        height: 52px;
+        font-size: 15px;
+    }
+
+    .contactform textarea {
+        min-height: 160px;
+        font-size: 15px;
+    }
+
+    .contactform button {
+        width: 100%;
+        height: 48px;
+        margin: 0;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 380px) {
+    .contactform {
+        padding: 1.2rem;
+        gap: 1rem;
+    }
+
+    .contactform input {
+        height: 48px;
+    }
+
+    .contactform textarea {
+        min-height: 140px;
+    }
+}
